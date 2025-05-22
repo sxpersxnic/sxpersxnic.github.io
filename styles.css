@@ -1,12 +1,12 @@
 :root {
-	--bg: #ffffff;
-	--fg: #000000;
+	--bg: #f5f7fa;
+	--fg: #22304a;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg: #000000;
-		--fg: #ffffff;
+		--bg: #1a2233;
+		--fg: #e6eaf3;
 	}
 }
 
@@ -14,7 +14,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: auto;
+	height: 100svh;
 	background-color: var(--bg);
 	color: var(--fg);
 }
@@ -28,14 +28,14 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	align-items: center;
 	justify-content: center;
 }
 
 @keyframes fadeinall {
 	0% {
-		opacity: 1; 
+		opacity: 1;
 	}
 	97% {
 		opacity: 0;
@@ -49,8 +49,8 @@ h1 {
 		opacity: 0;
 		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
-		z-index: -1; 
-	} 
+		z-index: -1;
+	}
 }
 
 #fadein {
@@ -63,12 +63,13 @@ h1 {
 	-webkit-transform: translateY(0);
 	-ms-transform: translateY(0);
 	transform: translateY(0);
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	z-index: 999;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 	-webkit-animation: fadeinall 1s normal both;
 	animation: fadeinall 1s normal both;
 	-webkit-animation-delay: 0.3s;
-	animation-delay: 0.3s; 
+	animation-delay: 0.3s;
 }
+
